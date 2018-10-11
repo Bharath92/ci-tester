@@ -11,7 +11,7 @@ runtime:
       on_success:
         - docker build -t foo/arm64_bar:master .
         - docker pull bharath92/gitissues
-  - nodePool: x86_64
+  - nodePool: ci-builder
 
 build:
   ci:
