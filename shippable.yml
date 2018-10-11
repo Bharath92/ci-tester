@@ -1,4 +1,8 @@
-language: none
+language: java
+
+java:
+  - openjdk8
+  - openjdk10
 
 build:
   ci:
