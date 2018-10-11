@@ -1,5 +1,28 @@
 language: none
 
+runtime:
+  - nodePool: u16
+    build:
+      on_success:
+        - docker build -t foo/arm32_bar:master .
+        - docker pull bharath92/gitissues
+  - nodePool: default-restricted
+    build:
+      on_success:
+        - docker build -t foo/arm64_bar:master .
+        - docker pull bharath92/gitissues
+  - nodePool: x86_64
+
 build:
   ci:
-    - echo hii
+    - echo hi
+  on_success:
+    - docker build -t foo/bar:master .
+    - docker pull bharath92/gitissues
+  on_failure:
+    - echo "Tests failed :("
+
+integrations:
+  hub:
+    - integrationName: docker
+      type: dockerRegistryLogin
