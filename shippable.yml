@@ -2,18 +2,21 @@ language: java
 
 java:
   - openjdk8
-  - openjdk10
 
 envs:
   - foo=bar
   - foo=var
 
 matrix:
-  exclude:
+  allow_failures:
     - jdk: openjdk8
       env: foo=var
 
 build:
   ci:
     - echo hii
-    - echo foo
+    - echo $foo
+    - |
+      if [ "$foo" == "var" ]; then
+        adaddf
+      fi
