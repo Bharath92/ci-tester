@@ -39,7 +39,6 @@ matrix:
   exclude:
     - jdk: openjdk8
       nodePool: ci-builder
-    - jdk: openjdk10
   allow_failures:
     - env: foo=far
       nodePool: default-restricted
