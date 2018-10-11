@@ -1,5 +1,9 @@
 language: none
 
+env:
+  - foo=bar
+  - foo=far
+
 build:
   ci:
-    - echo hii
+    - echo $foo
