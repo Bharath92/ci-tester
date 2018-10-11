@@ -3,14 +3,14 @@ language: java
 jdk:
   - openjdk8
 
-envs:
+env:
   - foo=bar
   - foo=var
 
-# matrix:
-#   allow_failures:
-#     - jdk: openjdk8
-#       env: foo=var
+matrix:
+   allow_failures:
+    - jdk: openjdk8
+      env: foo=var
 
 build:
   ci:
