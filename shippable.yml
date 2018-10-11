@@ -4,7 +4,7 @@ jdk:
   - openjdk8
   - openjdk10
 
-envs:
+env:
   - foo=bar
   - foo=var
 
