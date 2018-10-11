@@ -1,4 +1,16 @@
-language: none
+language: java
+
+java:
+  - openjdk8
+  - openjdk10
+
+envs:
+  - foo=bar
+  - foo=var
+
+matrix:
+  include:
+    - jdk: oraclejdk8
 
 build:
   ci:
