@@ -1,5 +1,64 @@
-language: none
+language: java
+
+jdk:
+  - openjdk8
+  - openjdk10
+
+env:
+  - foo=bar
+  - foo=far
+
+runtime:
+  - nodePool: u16
+    build:
+      pre_ci:
+        - echo "pre-ci section"
+  - nodePool: default-restricted
+    build:
+      pre_ci_boot:
+        image_name: drydock/aarch64_u16javall
+        image_tag: master
+        pull: true
+      ci:
+        - echo "ci section"
+        - |
+          if [ "$foo" == "far" ]; then
+            adsf
+          fi
+  - nodePool: ci-builder
+    build:
+      cache: false
+      always:
+        - echo always
+
+matrix:
+  include:
+    - jdk: oraclejdk8
+    - jdk: oraclejdk8
+      nodePool: default-restricted
+  exclude:
+    - jdk: openjdk8
+      nodePool: ci-builder
+    - jdk: openjdk10
+  allow_failures:
+    - env: foo=far
+      nodePool: default-restricted
 
 build:
   ci:
-    - echo hii
+    - echo "$foo ci section"
+  post_ci:
+    - echo "post-ci section"
+    - docker pull bharath92/gitissues
+  on_success:
+    - echo "on-success section"
+  on_failure:
+    - echo "on-failure section"
+  cache: true
+  push:
+    - echo "push section"
+
+integrations:
+  hub:
+    - integrationName: docker
+      type: dockerRegistryLogin
