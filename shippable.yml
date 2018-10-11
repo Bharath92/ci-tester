@@ -9,9 +9,11 @@ envs:
   - foo=var
 
 matrix:
-  include:
-    - jdk: oraclejdk8
+  exclude:
+    - jdk: openjdk8
+      env: foo=var
 
 build:
   ci:
     - echo hii
+    - echo foo
