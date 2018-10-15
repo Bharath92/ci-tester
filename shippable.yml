@@ -1,17 +1,17 @@
 language: none
 
 runtime:
-  - nodePool: u16
-    build:
-      on_success:
-        - docker build -t foo/arm32_bar:master .
-        - docker pull bharath92/gitissues
+  #- nodePool: u16
+  #  build:
+  #    on_success:
+  #      - docker build -t foo/arm32_bar:master .
+  #      - docker pull bharath92/gitissues
   - nodePool: default-restricted
     build:
       on_success:
         - docker build -t foo/arm64_bar:master .
         - docker pull bharath92/gitissues
-  - nodePool: ci-builder
+  #- nodePool: ci-builder
 
 build:
   ci:
