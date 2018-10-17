@@ -13,11 +13,11 @@ runtime:
 
 matrix:
   exclude:
-    - rvm: 2.7
+    - rvm: 2.5
       nodePool: shippable_shared_aarch32
       env: PGVERSION=10.0-1-linux-64
   include:
-    - rvm: 2.7
+    - rvm: 2.5
       nodePool: shippable_shared_aarch32
       env: PGVERSION=10.0-1-linux
 
