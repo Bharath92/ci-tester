@@ -11,14 +11,14 @@ runtime:
   - nodePool: shippable_shared_aarch64
 
 matrix:
-  include:
-    - rvm: 2.7
-      nodePool: shippable_shared_aarch32
-      env: PGVERSION=10.0-1-linux
   exclude:
     - rvm: 2.7
       nodePool: shippable_shared_aarch32
       env: PGVERSION=10.0-1-linux-64
+  include:
+    - rvm: 2.7
+      nodePool: shippable_shared_aarch32
+      env: PGVERSION=10.0-1-linux
 
 build:
   ci:
