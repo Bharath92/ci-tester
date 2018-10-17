@@ -8,4 +8,4 @@ runtime:
 build:
   ci:
     - echo "PGVERSION: ${PGVERSION}"
-    - true
+    - eval true
