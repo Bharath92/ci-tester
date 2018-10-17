@@ -1,6 +1,7 @@
 language: ruby
 
-rvm: 2.7
+rvm:
+  - 2.7
 
 env:
   - PGVERSION=10.0-1-linux-64
