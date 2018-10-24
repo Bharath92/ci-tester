@@ -9,4 +9,5 @@ build:
 
 matrix:
   include:
-    nodePool: u14
+    - nodePool: u14
+      env: foo=bar
