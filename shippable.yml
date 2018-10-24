@@ -1,5 +1,12 @@
 language: none
 
+runtime:
+  nodePool: u16
+
 build:
   ci:
     - echo hii
+
+matrix:
+  include:
+    nodePool: u14
