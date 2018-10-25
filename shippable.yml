@@ -10,7 +10,7 @@ build:
 
 matrix:
   include:
-    - nodePool: u16
+    - nodePool: u14
       env: foo=bar
 #    - nodePool: u14
 #      env: foo=bar
