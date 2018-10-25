@@ -2,16 +2,16 @@ language: node_js
 
 node_js:
   - 4.8.5
-  - 8.11.2
+#  - 8.11.2
 
 build:
   ci:
     - echo hii
 
-#matrix:
-#  include:
-#    - nodePool: u16
-#      env: foo=bar
+matrix:
+  include:
+    - nodePool: u16
+      node_js: 8.11.2
 #    - nodePool: u14
 #      env: foo=bar
 #    - nodePool: u16
