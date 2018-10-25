@@ -1,7 +1,7 @@
 language: node_js
 
-node_js:
-  - 4.8.5
+#node_js:
+#  - 4.8.5
 #  - 8.11.2
 
 build:
@@ -11,7 +11,7 @@ build:
 matrix:
   include:
     - nodePool: u16
-      node_js: 4.8.5
+      env: foo=bar
 #    - nodePool: u14
 #      env: foo=bar
 #    - nodePool: u16
