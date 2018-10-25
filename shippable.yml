@@ -4,8 +4,8 @@ language: none
 #  - 4.8.5
 #  - 8.11.2
 
-env:
-  - shoo=foo
+#env:
+#  - shoo=foo
 
 build:
   ci:
