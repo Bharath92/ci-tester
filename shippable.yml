@@ -10,3 +10,5 @@ matrix:
       env: foo=bar
     - nodePool: u14
       env: foo=bar
+    - nodePool: u16
+      env: foo=bara
