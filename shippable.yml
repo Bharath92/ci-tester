@@ -13,5 +13,5 @@ build:
 
 matrix:
   exclude:
-    - nodePool: u14
+    - nodePool: u14d
       env: foo=bar
