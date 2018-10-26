@@ -1,6 +1,10 @@
 language: java
 
-jdk: openjdk11
+runtime:
+  nodePool: u16
+
+jdk:
+  - openjdk11
 
 build:
   ci:
