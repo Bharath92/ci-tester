@@ -1,13 +1,5 @@
 language: none
 
-runtime:
-  nodePool: u14
-
-matrix:
-  include:
-    - nodePool: u14
-      env: foo=bar
-
 build:
   ci:
     - echo hi
