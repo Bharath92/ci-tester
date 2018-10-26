@@ -1,11 +1,17 @@
 language: none
 
+runtime:
+  nodePool: u14
+
+env:
+  - foo=bar
+  - doo=dar
+
 build:
   ci:
     - echo hi
 
 matrix:
-  include:
-    - nodePool: u16
+  exclude:
+    - nodePool: du16
       env: foo=bar
-    - env: foo=baz
