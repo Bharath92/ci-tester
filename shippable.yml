@@ -1,12 +1,9 @@
 language: none
 
-runtime:
-  nodePool: u14
+build:
+  ci:
+    - echo hi
 
 matrix:
   include:
     - nodePool: u14
-
-build:
-  ci:
-    - echo hi
