@@ -5,7 +5,8 @@ language: none
 #  - 8.11.2
 
 runtime:
-  nodePool: u14
+  - nodePool: u14
+  - nodePool: c7
 
 #env:
 #  - shoo=foo
