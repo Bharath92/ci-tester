@@ -1,21 +1,11 @@
 language: none
 
-runtime:
-  nodePool: u14
-
-env:
-  - foo=bar
-  - doo=dar
-
 build:
   ci:
     - echo hi
-    - |
-      if [ "$foo" == "bar" ]; then
-        afsd
-      fi
 
 matrix:
-  allow_failures:
-    - nodePool: u14
+  include:
+    - nodePool: u16
       env: foo=bar
+    - env: foo=baz
