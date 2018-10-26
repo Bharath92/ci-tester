@@ -2,7 +2,7 @@ language: none
 
 matrix:
   include:
-    - nodePool: u16
+    - nodePool: u14
       env: foo=bar
     - nodePool: centos7
       env: foo=baz
