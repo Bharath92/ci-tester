@@ -6,6 +6,7 @@ runtime:
 matrix:
   include:
     - nodePool: u14
+      env: foo=bar
 
 build:
   ci:
