@@ -8,9 +8,9 @@ runtime:
   - nodePool: u14
   - nodePool: centos7
 
-env:
-  - shoo=foo
-  - koo=too
+#env:
+#  - shoo=foo
+#  - koo=too
 
 build:
   ci:
