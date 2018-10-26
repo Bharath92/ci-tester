@@ -1,4 +1,8 @@
 language: none
 
+matrix:
+  include:
+    - nodePool: u14
+
 build:
   ci: echo hi
