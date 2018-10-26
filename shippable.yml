@@ -1,15 +1,8 @@
 language: none
 
-env:
-  - foo=bar
-  - foo=baz
-
-matrix:
-  include:
-    - nodePool: u14
-      env: foo=bar
-    - nodePool: centos7
-      env: foo=baz
+runtime:
+  nodePool: u14
 
 build:
-  ci: echo hi
+  ci:
+    - echo hi
