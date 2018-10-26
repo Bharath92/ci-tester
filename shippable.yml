@@ -1,8 +1,5 @@
 language: none
 
-matrix:
-  include:
-    - env: foo=bar
-
 build:
-  ci: echo hi
+  ci:
+    - echo hi
