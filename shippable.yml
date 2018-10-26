@@ -1,15 +1,11 @@
-language: none
+language: java
 
-env:
-  - foo=bar
-  - foo=baz
+runtime:
+  nodePool: u14
 
 matrix:
   include:
     - nodePool: u14
-      env: foo=bar
-    - nodePool: centos7
-      env: foo=baz
 
 build:
   ci: echo hi
