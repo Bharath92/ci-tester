@@ -1,10 +1,8 @@
 language: none
 
-runtime:
-  nodePool: u16
-
-jdk:
-  - openjdk11
+matrix:
+  include:
+    - nodePool: u14
 
 build:
   ci:
