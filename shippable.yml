@@ -1,7 +1,7 @@
 language: none
 
 runtime:
-  nodePool: c7
+  nodePool: centos7
 
 build:
   ci:
