@@ -6,7 +6,7 @@ language: java
 
 runtime:
   - nodePool: u14
-  - nodePool: centos7
+  #- nodePool: centos7
 
 #env:
 #  - shoo=foo
@@ -16,10 +16,10 @@ build:
   ci:
     - echo hii
 
-matrix:
-  include:
-    - nodePool: u16
-      env: foo=bar
+#matrix:
+#  include:
+#    - nodePool: u16
+#      env: foo=bar
 #    - nodePool: u16
 #      env: boo=far
 #    - nodePool: u14
