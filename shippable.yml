@@ -1,11 +1,4 @@
 language: none
 
 build:
-  ci:
-    - echo hi
-
-matrix:
-  include:
-    - nodePool: u16
-      env: foo=bar
-    - env: foo=baz
+  ci: echo hi
