@@ -1,5 +1,9 @@
 language: none
 
+env:
+  - foo=bar
+  - foo=baz
+
 matrix:
   include:
     - nodePool: u14
