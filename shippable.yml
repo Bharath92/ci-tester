@@ -1,15 +1,16 @@
 language: node_js
 
-node_js:
-  - 4.8.5
-  - 8.11.2
+#node_js:
+#  - 4.8.5
+#  - 8.11.2
 
 runtime:
   - nodePool: u14
   - nodePool: centos7
 
-#env:
-#  - shoo=foo
+env:
+  - shoo=foo
+  - koo=too
 
 build:
   ci:
