@@ -1,4 +1,4 @@
-language: none
+language: java
 
 #node_js:
 #  - 4.8.5
