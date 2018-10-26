@@ -6,7 +6,7 @@ language: java
 
 runtime:
   - nodePool: u14
-  - nodePool: centos7
+#  - nodePool: centos7
 
 #env:
 #  - shoo=foo
