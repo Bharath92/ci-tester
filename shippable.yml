@@ -20,6 +20,7 @@ matrix:
   include:
     - nodePool: u14
       env: foo=bar
+      jdk: openjdk8
 #      node_js: 4.8.5
 #    - nodePool: u16
 #      env: boo=far
