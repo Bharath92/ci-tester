@@ -4,9 +4,14 @@ runtime:
   - nodePool: u16
   - nodePool: centos7
 
+env:
+  - foo=bar
+  - foo=baz
+
 matrix:
   include:
     - nodePool: u14
+      env: foo=matrix
 
 build:
   ci: echo hi
