@@ -18,9 +18,9 @@ build:
 
 matrix:
   include:
-    - nodePool: u16
+    - nodePool: u14
       env: foo=bar
-      node_js: 4.8.5
+#      node_js: 4.8.5
 #    - nodePool: u16
 #      env: boo=far
 #    - nodePool: u14
