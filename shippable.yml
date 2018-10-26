@@ -16,6 +16,6 @@ build:
       fi
 
 matrix:
-  allow_failure:
-    - nodePool: u14
+  allow_failures:
+    - nodePool: u14d
       env: foo=bar
