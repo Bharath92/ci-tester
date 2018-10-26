@@ -2,6 +2,7 @@ language: none
 
 runtime:
   - nodePool: u16
+  - nodePool: centos7
 
 matrix:
   include:
