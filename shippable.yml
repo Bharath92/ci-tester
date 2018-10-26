@@ -1,5 +1,8 @@
 language: none
 
+runtime:
+  nodePool: c7
+
 build:
   ci:
     - echo hi
@@ -7,3 +10,6 @@ build:
 matrix:
   include:
     - nodePool: u14
+    - nodePool: u14
+      env: foo=bar
+    - nodePool: u16
