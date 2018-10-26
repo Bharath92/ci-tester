@@ -18,8 +18,8 @@ matrix:
   include:
     - nodePool: u14
       env: foo=bar
-    - nodePool: u16
-      env: boo=far
+#    - nodePool: u16
+#      env: boo=far
 #    - nodePool: u14
 #      env: foo=bar
 #    - nodePool: u16
