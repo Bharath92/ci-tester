@@ -1,12 +1,8 @@
-language: java
+language: node_js
 
-#node_js:
-#  - 4.8.5
-#  - 8.11.2
-
-runtime:
-  - nodePool: u14
-  - nodePool: centos7
+node_js:
+  - 4.8.5
+  - 8.11.2
 
 #env:
 #  - shoo=foo
@@ -18,9 +14,7 @@ build:
 
 matrix:
   include:
-    - nodePool: u16
-      env: foo=bar
-      node_js: 4.8.5
+    - env: foo=bar
 #    - nodePool: u16
 #      env: boo=far
 #    - nodePool: u14
