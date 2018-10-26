@@ -10,8 +10,12 @@ env:
 build:
   ci:
     - echo hi
+    - |
+      if [ "$foo" == "bar" ]; then
+        afsd
+      fi
 
 matrix:
-  exclude:
-    - nodePool: u14
+  allow_failure:
+    - nodePool: u14d
       env: foo=bar
