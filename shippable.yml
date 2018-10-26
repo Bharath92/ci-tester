@@ -6,6 +6,6 @@ build:
 
 matrix:
   include:
-    - nodePool: u16
+    - nodePool: u14
       env: foo=bar
     - env: foo=baz
