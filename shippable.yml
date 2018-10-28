@@ -1,9 +1,10 @@
 language: none
 
-runtime:
-  nodePool: u14
-
 build:
+  pre_ci_boot:
+    image_name: ubuntu
+    image_tag: 16.04
+    pull: true
   ci:
     - echo hi
 
