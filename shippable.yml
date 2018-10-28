@@ -6,4 +6,4 @@ build:
 
 matrix:
   include:
-    - nodePool: u14
+    - nodePool: restricted_aarch64
