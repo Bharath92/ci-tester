@@ -13,7 +13,7 @@ rvm:
   - 2.6
 
 
-#matrix:
+matrix:
 #  include:
 #    - rvm: 2.5
 #      nodePool: u16
@@ -27,6 +27,16 @@ rvm:
 #    - nodePool: default-restricted	
 #      env: PGVERSION=rest
 #      rvm: 2.5
+  exclude:
+    - rvm: 2.7
+      nodePool: u14
+    - rvm: 2.6
+      nodePool: u163
+  allow_failures:
+    - rvm: 2.7
+      nodePool: u14d
+    - rvm: 2.6
+      nodePool: centos7
 build:
   ci:
     - |
