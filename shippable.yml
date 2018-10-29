@@ -1,5 +1,8 @@
 language: java
 
+runtime:
+  nodePool: centos7
+
 matrix:
   include:
     - jdk: openjdk8
@@ -7,10 +10,7 @@ matrix:
     - jdk: openjdk8
       env: ARCH=aarch64
       nodePool: u16
-    - jdk: openjdk8
-      env: ARCH=aarch32
-      nodePool: u14
 
 build:
   ci:
-    - echo hi
+    - mvn clean deploy
