@@ -35,7 +35,7 @@ matrix:
   allow_failures:
     - rvm: 2.7
       nodePool: u14d
-    - rvm: 2.6
+    - rvm: 2.7
       nodePool: centos7
 build:
   ci:
