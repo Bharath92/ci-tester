@@ -1,41 +1,28 @@
-language: ruby
+language: java
+
+jdk:
+  - openjdk8
 
 runtime:
   - nodePool: u14
   - nodePool: u16
-  - nodePool: centos7
-env:
-  - foo=bar
-  - foo=baz
-
-rvm:
-  - 2.7
-  - 2.6
-
+    build:
+      pre_ci_boot:
+        image_name: drydock/u16javall
+        image_tag: v6.10.1
+        pull: true
 
 matrix:
-#  include:
-#    - rvm: 2.5
-#      nodePool: u16
-#      env: PGVERSION=10.0-1-linux-64
-#    - rvm: 2.5
-#      nodePool: u14
-#      env: PGVERSION=10.0-1-linux-64
-#    - rvm: 2.5
-#      nodePool: centos7
-#      env: PGVERSION=10.0-1-linux-64
-#    - nodePool: default-restricted	
-#      env: PGVERSION=rest
-#      rvm: 2.5
-  exclude:
-    - rvm: 2.7
-      nodePool: u14
-    - rvm: 2.6
-      nodePool: u163
-  allow_failures:
-    - rvm: 2.7
+  include:
+    - jdk: openjdk8
+      env: foo=bar
+    - jdk: openjdk8
+      env: foo=baz
+      nodePool: u16
+    - jdk: openjdk8
+      env: foo=bar
+      nodePool: centos7
+
 build:
   ci:
-    - |
-      echo "PGVERSION: ${PGVERSION}"
     - echo hi
