@@ -1,9 +1,9 @@
-
 language: ruby
 
 runtime:
-  nodePool: u14
-  
+  - nodePool: u14
+  - nodePool: u16
+  - nodePool: centos7
 env:
   - foo=bar
   - foo=baz
@@ -13,17 +13,17 @@ rvm:
   - 2.6
 
 
-matrix:
-  include:
-    - rvm: 2.5
-      nodePool: u16
-      env: PGVERSION=10.0-1-linux-64
-    - rvm: 2.5
-      nodePool: u14
-      env: PGVERSION=10.0-1-linux-64
-    - rvm: 2.5
-      nodePool: centos7
-      env: PGVERSION=10.0-1-linux-64
+#matrix:
+#  include:
+#    - rvm: 2.5
+#      nodePool: u16
+#      env: PGVERSION=10.0-1-linux-64
+#    - rvm: 2.5
+#      nodePool: u14
+#      env: PGVERSION=10.0-1-linux-64
+#    - rvm: 2.5
+#      nodePool: centos7
+#      env: PGVERSION=10.0-1-linux-64
 #    - nodePool: default-restricted	
 #      env: PGVERSION=rest
 #      rvm: 2.5
