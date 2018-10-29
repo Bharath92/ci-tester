@@ -1,5 +1,7 @@
 language: java
 
+jdk: openjdk8
+
 runtime:
   nodePool: centos7
 
@@ -13,4 +15,4 @@ matrix:
 
 build:
   ci:
-    - mvn clean deploy
+    - echo hi
