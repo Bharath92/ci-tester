@@ -34,9 +34,6 @@ matrix:
       nodePool: u163
   allow_failures:
     - rvm: 2.7
-      nodePool: u14d
-    - rvm: 2.7
-      nodePool: centos7
 build:
   ci:
     - |
