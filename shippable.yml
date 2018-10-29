@@ -5,10 +5,9 @@ build:
     image_name: ubuntu
     image_tag: 16.04
     pull: true
-    options: "-e a=b"
   ci:
     - echo hi
 
 matrix:
   include:
-    - nodePool: restricted_aarch64
+    - nodePool: default-restricted
