@@ -1,27 +1,15 @@
 language: java
 
-jdk:
-  - openjdk8
-
-runtime:
-  - nodePool: u14
-  - nodePool: u16
-    build:
-      pre_ci_boot:
-        image_name: drydock/u16javall
-        image_tag: v6.10.1
-        pull: true
-
 matrix:
   include:
     - jdk: openjdk8
-      env: foo=bar
+      env: ARCH=x86_64
     - jdk: openjdk8
-      env: foo=baz
+      env: ARCH=aarch64
       nodePool: u16
     - jdk: openjdk8
-      env: foo=bar
-      nodePool: centos7
+      env: ARCH=aarch32
+      nodePool: u14
 
 build:
   ci:
