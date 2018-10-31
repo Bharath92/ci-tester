@@ -1,5 +1,6 @@
 language: none
 
 build:
+  cache: true
   ci:
     - echo hii
