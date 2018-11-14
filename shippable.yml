@@ -6,4 +6,5 @@ build:
     - echo hii
     - docker ps -a
     - docker images
-    - [ $(docker version --format {{.Server.Version}}) == "17.06.0-ce" ]
+    - |
+      [ $(docker version --format {{.Server.Version}}) == "17.06.0-ce" ]
