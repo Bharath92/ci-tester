@@ -1,14 +1,9 @@
 language: none
 
-runtime:
-  - nodePool: u14
-  - nodePool: u16
-  - nodePool: centos7
-
 build:
   ci:
     - docker info
     - docker ps -a
     - docker images
     - |
-      [ $(docker version --format {{.Server.Version}}) == "1.13.0" ]
+      [ $(docker version --format {{.Server.Version}}) == "17.06.0-ce" ]
