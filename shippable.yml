@@ -1,5 +1,9 @@
 language: python
 
+matrix:
+  include:
+    env: foo=bar
+
 build:
   ci:
     - docker info
