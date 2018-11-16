@@ -1,7 +1,7 @@
 language: python
 
-#runtime:
-#  nodePool: u16
+runtime:
+  nodePool: u16
 
 python:
   - 3.7
