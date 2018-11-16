@@ -2,7 +2,8 @@ language: python
 
 matrix:
   include:
-    env: foo=bar
+    - env: foo=bar
+      version: 2.7
 
 build:
   ci:
