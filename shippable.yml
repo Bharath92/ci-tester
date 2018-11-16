@@ -1,17 +1,17 @@
 language: python
 
-runtime:
-  nodePool: u16
-
-python:
-  - 3.7
-  - 2.7
-
-matrix:
-  include:
-    - env: foo=bar
-      nodePool: u14
-    - env: boo=far
+#runtime:
+#  nodePool: u16
+#
+#python:
+#  - 3.7
+#  - 2.7
+#
+#matrix:
+#  include:
+#    - env: foo=bar
+#      nodePool: u14
+#    - env: boo=far
 
 
 build:
