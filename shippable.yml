@@ -1,5 +1,8 @@
 language: python
 
+runtime:
+  nodePool: default_node_pool
+
 matrix:
   include:
     - env: foo=bar
