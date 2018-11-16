@@ -1,11 +1,12 @@
 language: python
 
 runtime:
-  nodePool: default_node_pool
+  nodePool: u16
 
 matrix:
   include:
     - env: foo=bar
+      nodePool: u14
     - env: boo=far
 
 
