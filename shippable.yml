@@ -1,8 +1,12 @@
 language: python
 
-matrix:
-  include:
-    - env: foo=bar
+#matrix:
+#  include:
+#    - env: foo=bar
+
+env:
+  - foo=bar
+  - boo=far
 
 build:
   ci:
