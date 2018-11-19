@@ -19,6 +19,7 @@ node_js:
 
 build:
   ci:
+    - npm cache verify
     - npm cache clean
     - npm cache ls
     - grunt --version
