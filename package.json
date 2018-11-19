@@ -1,0 +1,14 @@
+{
+  "name": "ci-tester",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bharath92/ci-tester.git"
+  },
+  "dependencies": {
+    "path": "0.12.7",
+    "winston": "2.2.0",
+    "phantomjs-prebuilt": "2.1.16"
+  }
+}
