@@ -16,8 +16,8 @@ language: node_js
 
 build:
   ci:
-    - npm cache ls
     - npm cache clean
+    - npm cache ls
     - grunt --version
     - docker info
     - docker ps -a
