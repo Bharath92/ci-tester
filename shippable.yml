@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 8.12
+  - 6.10
 
 #runtime:
 #  nodePool: u16
@@ -19,6 +19,7 @@ node_js:
 
 build:
   ci:
+    - npm install phantomjs
     - npm cache verify
     - npm cache clean --force
     - npm cache verify
