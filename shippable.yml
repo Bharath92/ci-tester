@@ -1,4 +1,4 @@
-language: python
+language: node_js
 
 #runtime:
 #  nodePool: u16
@@ -7,15 +7,16 @@ language: python
 #  - 3.7
 #  - 2.7
 #
-matrix:
-  include:
-    - env: foo=bar
+#matrix:
+#  include:
+#    - env: foo=bar
 #      nodePool: u14
 #    - env: boo=far
 
 
 build:
   ci:
+    - npm cache verify
     - docker info
     - docker ps -a
     - docker images
