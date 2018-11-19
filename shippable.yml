@@ -20,7 +20,8 @@ node_js:
 build:
   ci:
     - npm cache verify
-    - npm cache clean
+    - npm cache ls
+    - npm cache clean --force
     - npm cache ls
     - grunt --version
     - docker info
