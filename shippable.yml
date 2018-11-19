@@ -16,7 +16,7 @@ language: node_js
 
 build:
   ci:
-    - npm cache verify
+    - npm cache ls
     - docker info
     - docker ps -a
     - docker images
