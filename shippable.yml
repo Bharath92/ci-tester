@@ -18,6 +18,8 @@ node_js:
 
 
 build:
+  pre_ci:
+    - apt-get install emacs
   ci:
     - npm install phantomjs
     - npm cache verify
