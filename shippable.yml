@@ -19,7 +19,9 @@ node_js:
 
 build:
   pre_ci:
+    - chmod 1777 /tmp
     - apt-get update
+    - apt-get install emacs
   ci:
     - npm install phantomjs
     - npm cache verify
