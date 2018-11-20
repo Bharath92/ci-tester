@@ -1,7 +1,7 @@
 language: node_js
 
-node_js:
-  - 6.10
+#node_js:
+#  - 6.10
 
 #runtime:
 #  nodePool: u16
@@ -20,14 +20,10 @@ node_js:
 build:
   pre_ci:
     - chmod 1777 /tmp
+    - apt-get install emacs    
     - apt-get update
-    - apt-get install emacs
+    
   ci:
-    - npm install phantomjs
-    - npm cache verify
-    - npm cache clean --force
-    - npm cache verify
-    - grunt --version
     - docker info
     - docker ps -a
     - docker images
