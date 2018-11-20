@@ -21,7 +21,13 @@ build:
   ci:
     - npm config ls
     - npm install gulp@4.0.0 -g
-    - npm install
+    - |
+      if ! npm install; then
+        pushd /root/.npm/_logs
+        cat $(ls -At | head -n1)
+        popd
+        return 1
+      fi
     - npm cache verify
     - npm cache clean --force
     - npm cache verify
