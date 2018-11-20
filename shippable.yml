@@ -20,6 +20,8 @@ node_js:
 build:
   ci:
     - npm install gulp@4.0.0 -g
+    - rm -rf ~/.npm/_cacache/content-v2/sha512/0*
+    - rm -rf ~/.npm/_cacache/content-v2/sha512/1*
     - npm install
     - npm cache verify
     - npm cache clean --force
