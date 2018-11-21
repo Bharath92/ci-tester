@@ -21,7 +21,9 @@ build:
   pre_ci:
     #- rm /tmp/*
     #- chmod 1777 /tmp
-    - apt-get install emacs    
+    #- apt-get install emacs    
+    - apt-get update
+    - chmod 1777 /tmp
     - apt-get update
     
   ci:
