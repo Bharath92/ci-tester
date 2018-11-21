@@ -19,8 +19,8 @@ language: node_js
 
 build:
   pre_ci:
-    - rm /tmp/*
-    - chmod 1777 /tmp
+    #- rm /tmp/*
+    #- chmod 1777 /tmp
     - apt-get install emacs    
     - apt-get update
     
