@@ -19,7 +19,8 @@ language: node_js
 
 build:
   pre_ci:
-    - ls /tmp/cexec
+    - cat /tmp/cexec/message.json
+    - sleep 60
     
   ci:
     - docker info
