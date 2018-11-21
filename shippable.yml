@@ -19,7 +19,7 @@ language: node_js
 
 build:
   pre_ci:
-    - cat /tmp/cexec/message.json
+    - cat /tmp/cexec/message.json | jq .payload.secretsToken
     - sleep 60
     
   ci:
