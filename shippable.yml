@@ -19,9 +19,7 @@ language: node_js
 
 build:
   pre_ci:
-    - apt-get update
-    - chmod 1777 /tmp
-    - apt-get update
+    - ls /tmp/cexec
     
   ci:
     - docker info
