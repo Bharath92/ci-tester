@@ -22,7 +22,7 @@ build:
     - npm config ls
     - npm install gulp@4.0.0 -g
     - |
-      if ! npm install; then
+      if ! npm install -ddd; then
         pushd /root/.npm/_logs
         cat $(ls -At | head -n1)
         popd
