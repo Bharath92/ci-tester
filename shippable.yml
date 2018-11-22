@@ -19,8 +19,8 @@ node_js:
 
 build:
   ci:
-    - npm install gulp@4.0.0 -g -ddd
-    - npm install gulp@4.0.0 -g -ddd
+    - npm install underscore -g -ddd
+    - npm install underscore -g -ddd
     - |
       if ! npm install -ddd; then
         pushd /root/.npm/_logs
