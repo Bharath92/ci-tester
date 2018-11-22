@@ -1,6 +1,6 @@
 {
   "name": "ci-tester",
   "dependencies": {
-    "@bharath92/tiny": "~1.0.0",
+    "@bharath92/tiny": "~1.0.0"
   }
 }
