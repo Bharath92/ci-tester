@@ -20,6 +20,7 @@ node_js:
 build:
   ci:
     - npm install gulp@4.0.0 -g
+    - npm install gulp@4.0.0 -g
     - |
       if ! npm install -ddd; then
         pushd /root/.npm/_logs
