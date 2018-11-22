@@ -2,6 +2,6 @@
   "name": "ci-tester",
   "dependencies": {
     "@bharath92/tiny": "~1.0.0",
-    "underscore": "latest"
+    "underscore": "1.9.1"
   }
 }
