@@ -27,7 +27,4 @@ build:
         popd
         exit 1
       fi
-    - npm cache verify
-    - npm cache clean --force
-    - npm cache verify
     
