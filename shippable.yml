@@ -11,4 +11,5 @@ build:
     - . /root/.bashrc && . /usr/local/rvm/scripts/rvm && rvm use 2.6.0
     - rvm autolibs disable
     - rvm ls
+    - gem --version
     - gem install bundler --no-ri --no-rdoc --version 1.17.3
