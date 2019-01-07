@@ -15,7 +15,7 @@ build:
     - gem_version_major=$(echo $gem_version | awk '{split($0, a, "."); print a[1]}')
     - |
       if [ $gem_version_major -gt 2 ]; then
-        gem_install_cmd="gem install bundler --no-rdoc --no-document --version 1.17.3"  
+        gem_install_cmd="gem install bundler --no-document --version 1.17.3"  
       else
         gem_install_cmd="gem install bundler --no-ri --no-rdoc --version 1.17.3"
       fi
