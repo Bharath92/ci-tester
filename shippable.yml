@@ -21,5 +21,5 @@ build:
         gem_install_cmd="gem install bundler --no-ri --no-rdoc --version 1.17.3"
       fi
     - echo "$gem_install_cmd"
-    - gem --help
+    - gem install --help
     - eval "$gem_install_cmd"
