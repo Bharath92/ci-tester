@@ -8,7 +8,7 @@ build:
   ci:
     - source /usr/local/rvm/scripts/rvm
     - rvm install 2.6.0 --verify-downloads 1
-    - . /root/.bashrc && . /usr/local/rvm/scripts/rvm && rvm use 2.5.3
+    - . /root/.bashrc && . /usr/local/rvm/scripts/rvm && rvm use 2.6.0
     - rvm autolibs disable
     - rvm ls
     - gem_version=$(gem --version)
@@ -21,4 +21,5 @@ build:
         gem_install_cmd="gem install bundler --no-ri --no-rdoc --version 1.17.3"
       fi
     - echo "$gem_install_cmd"
+    - gem --help
     - eval "$gem_install_cmd"
