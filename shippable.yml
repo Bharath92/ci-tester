@@ -12,6 +12,7 @@ build:
     - rvm autolibs disable
     - rvm ls
     - gem_version=$(gem --version)
+    - echo $gem_version
     - gem_version_major=$(echo $gem_version | awk '{split($0, a, "."); print a[1]}')
     - |
       if [ $gem_version_major -gt 2 ]; then
