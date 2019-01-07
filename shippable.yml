@@ -1,4 +1,7 @@
-language: none
+language: ruby
+
+rvm:
+  - 2.6.0
 
 build:
   pre_ci_boot:
@@ -6,20 +9,4 @@ build:
     image_tag: master
     pull: true
   ci:
-    - source /usr/local/rvm/scripts/rvm
-    - rvm install 2.6.0 --verify-downloads 1
-    - . /root/.bashrc && . /usr/local/rvm/scripts/rvm && rvm use 2.6.0
-    - rvm autolibs disable
-    - rvm ls
-    - gem_version=$(gem --version)
-    - echo $gem_version
-    - gem_version_major=$(echo $gem_version | awk '{split($0, a, "."); print a[1]}')
-    - |
-      if [ $gem_version_major -gt 2 ]; then
-        gem_install_cmd="gem install bundler --no-document --version 1.17.3"  
-      else
-        gem_install_cmd="gem install bundler --no-ri --no-rdoc --version 1.17.3"
-      fi
-    - echo "$gem_install_cmd"
-    - gem install --help
-    - eval "$gem_install_cmd"
+    - gem --version
