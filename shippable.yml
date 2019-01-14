@@ -14,9 +14,4 @@ matrix:
 
 build:
   ci:
-    - echo hii
-    - echo $foo
-    - |
-      if [ "$foo" == "var" ]; then
-        adaddf
-      fi
+    - asd
