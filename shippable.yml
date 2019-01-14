@@ -6,6 +6,7 @@ jdk:
 env:
   - foo=bar
   - foo=var
+  - foo=sar
 
 matrix:
    allow_failures:
