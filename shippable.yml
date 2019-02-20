@@ -20,6 +20,10 @@ services:
   - mysql
 
 build:
+  pre_ci_boot:
+    image_name: drydock/u16all
+    image_tag: master
+    pull: true
   pre_ci:
     - cat /tmp/cexec/message.json | jq .payload.secretsToken
     
