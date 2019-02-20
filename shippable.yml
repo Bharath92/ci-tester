@@ -1,4 +1,4 @@
-language: node_js
+language: none
 
 #node_js:
 #  - 6.10
@@ -16,6 +16,8 @@ language: node_js
 #      nodePool: u14
 #    - env: boo=far
 
+services:
+  - mysql
 
 build:
   pre_ci:
